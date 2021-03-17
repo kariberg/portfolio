@@ -1,0 +1,25 @@
+/* mobile */
+html {
+  font-size: 10px;
+}
+
+/* tablet */
+@media only screen and (min-width: 480px) {
+  html {
+      font-size: 12px;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+  html {
+      font-size: 14px;
+  }
+}
+
+/* extra large */
+@media only screen and (min-width: 1024px) {
+  html {
+      font-size: 16px;
+  }
+}

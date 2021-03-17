@@ -1,38 +1,236 @@
 .App {
-  text-align: center;
+  background-color: #F8F8FF;
+  font: 400 1rem 'Public Sans', sans-serif;
+  color:black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  padding-top:3.57rem;
+  padding-left: 7.14rem;
+  padding-right: 7.14rem;
+  height:3rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  align-items: top;
+  text-transform: uppercase;
+}
+
+.nav-logo {
+  height:3.2rem;
+  width:3.2rem;
+  background-image: url("./docs/images/site-logo.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
+}
+
+nav a {
+  font: 600 1rem 'Public Sans', sans-serif;
+  color:rgba(255, 255, 255, 0.6);
+}
+
+nav a:hover {
+  font: italic 800 1rem 'Source Code Pro', monospace;
+  color:#ffffff;
+}
+
+nav .nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+p {
+  font: 500 0.9rem 'Public Sans', sans-serif;
+  color:#424242;
+}
+
+.case-category {
+  font: 900 0.9rem 'Source Code Pro', monospace;
+  color:#424242;
+  text-transform:uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font: 800 2.85rem 'Aileron', sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h1 strong {
+  font: 800 2.85rem 'Aileron', sans-serif;
+  color:#D6CFF5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 strong:hover {
+  font: italic 800 2.85rem 'Aileron', sans-serif;
+  color:#D6CFF5;
+}
+
+h2 {
+  font: 900 2.25rem 'Aileron', sans-serif;
+  color:#383185;
+}
+
+h3 {
+  font: 800 1.2rem 'Source Code Pro', monospace;
+  color:#D6CFF5;
+  text-transform: uppercase;
+}
+
+.home-header {
+  height:110vh;
+  background: #292273;  /* fallback for old browsers */
+  background: linear-gradient(163.88deg, #181252 10.34%, #292273 38.63%, #433496 66.92%, #5F48BD 117.85%);
+}
+
+.hero-container {
+  margin: 4rem 7.14rem;
+  height: 60vh;
+  display:flex;
+  justify-content: space-between;
+}
+
+.hero-heading {
+  padding-top: 4rem;
+  width:55%;
+}
+
+.hero-image {
+  width:45%;
+  background-image: url("./docs/images/hero-image.png");
+  background-position: right; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: contain;
+}
+
+.arch {
+  height:60px;
+  background:#F8F8FF;
+  margin-top:-30px;
+  border-radius:50%;
+}
+
+.cases-container {
+  margin: 2rem 7.14rem;
+}
+
+.cases-container h1 {
+  font: 900 1.8rem 'Aileron', sans-serif;
+  color:#424242;
+}
+
+.row {
+  margin-top:3rem;
+  background:white;
+  border-radius:1.8rem;
+  box-shadow: 10px 10px 15px 0px rgba(106, 102, 148, 0.05);
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+}
+
+.row:hover, .column:hover {
+  box-shadow: 12px 12px 15px 0px rgba(106, 102, 148, 0.20);
+}
+
+.row-image {
+  background:#46379B;
+  border-top-left-radius:1.8rem;
+  border-bottom-left-radius:1.8rem;
+  width:60%;
+}
+
+.row-content {
+  width:44%;
+  padding:3rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.block-row {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.column {
+  margin-top:3rem;
+  background:white;
+  border-radius:1.8rem;
+  box-shadow: 10px 10px 15px 0px rgba(106, 102, 148, 0.05);
+  width:47%;
+  display:flex;
+  flex-direction:column;
+  align-items:space-between;
+}
+
+.col-image {
+  background:#46379B;
+  border-top-left-radius:1.8rem;
+  border-top-right-radius:1.8rem;
+  height:18rem;
+}
+
+.col-content {
+  padding:2rem 3rem;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+footer {
+  background: white;
+  height:25vh;
+  margin-top:5rem;
+  padding-left: 7.14rem;
+  padding-right: 7.14rem;
+  font-weight:500;
+  font-size:0.9rem;
+  color:#585384;
+}
+
+footer a, footer a:visited {
+  color:#585384;
+}
+
+footer a:hover {
+  font-style:italic;
+  color:#6C5BFF;
+}
+
+.light {
+  color:#AEACC2;
+}
+
+.footer-row {
+  padding-top:3vh;
+  height: 18vh;
+  display:flex;
+  justify-content:space-between;
+}
+
+.footer-col-right {
+  text-align: right;
+}
+
+.footer-links {
+  width:35vw;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  padding-bottom:1rem;
+}
+
+.footer-bold {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font: 900 0.9rem 'Public Sans', sans-serif;
+  text-transform:uppercase;
+  letter-spacing: 1px;
 }
