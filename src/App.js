@@ -3,7 +3,7 @@ import HomeTop from './components/HomeTop';
 import Cases from './components/Cases';
 import Footer from './components/Footer';
 import './App.css';
-import './docs/css/media-queries.css';
+import './media-queries.css';
 
 function App() {
   return (
